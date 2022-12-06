@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPELERIA ABC</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css"> </link>
+    <link rel="shortcut icon" href="images/icon.png"> </link>
+    <script src="https://kit.fontawesome.com/35c6243a93.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
+	
+
+</head>
+<body>
+    <nav>
+        <div class="social-call">
+<div class="social">
+    <div class="social">
+        <a href="https://www.facebook.com/%C3%9Atiles-Materiales-y-Servicios-escolares-ABC-113517793760554"><i class="fa-brands fa-facebook-f" title="MATERIAL ESCOLAR ABC"></i></a>
+        <a href="#"><i class="fa-solid fa-phone"title="Tel +2783-2495"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"title="abcmateriales73@gmail.com"></i>
+           
+        </a>
+    </div>
+    <div class="phone">
+        
+    </div>
+</div>
+<!---MENU BAR-->
+        </div>
+        <div class="navigation">
+            <a href="#" class="logo">
+                <img src="images/ABC.png"></img>
+            </a>
+            <!---menu icon-->   
+            <div class="toggle"></div>
+            <ul class="menu">
+
+                <li><a href="">HOME</a></li>
+                <li><a href="Produc.html">TIENDA</a>
+                <!---SALE LABLE-->    
+                  <span class="sale-lable">Compra</span>
+                </li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="Somos.html">SOMOS</a></li>
+            </ul>
+            <!----<button class="switch" id="switch">
+                <span><i class="fas fa-sun"></i></span>
+                <span><i class="fas fa-moon"></i></span>
+            </button>---->
+
+                <!----SEARCH-->
+
+             <div class="right-menu">
+            
+               <!--- <a href="javascript:void(0);" class="search">
+                     <i class="fas fa-search"></i>
+                 </a>--->
+                    <!----user-->
+                <a href="javascript:void(0);" class="user">
+                     <i class="far fa-user"></i>
+        
+                </a>
+                    <!---cart - icon-->    
+              <!---- <a href="#">
+                    <i class="fa-solid fa-cart-shopping">
+                    <span class="num-cart-product"> 0</span>
+                </i>
+                </a>--->
+
+          </div>
+           
+        
+        </div>
+    </nav>
+    
+    <!--search-bar-->
+    <div class="search-bar">
+    <div class="search-input">
+        <input type="text" placeholder="search for product"/>
+
+        <a href="javascript:void(0);" class="search-cancel">
+            <i class="fas fa-times"></i>
+
+        </a>
+    </div>
+    </div>
+
+
+    <!--LOGIN AND SING UP FORM-->
+    <div class="form">
+
+        <div class="login-form"> 
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Mi Cuenta</strong>
+
+            <form action="php/login.php" method="POST" >
+                <input type="email" placeholder="@gmail.com" name="correo" required>
+                <input type="password" placeholder="Password" name="contrasena" required>
+
+                <input type="submit" value="Iniciar Cuenta">
+
+            </form>
+              <!--forget and sign up btn-->
+              <div class="form-btns">
+                <a href="#" class="forget">forget your password</a>
+                <a href="javascript:void(0);" class="sign-up-btn">create account</a>
+            </div>
+
+        </div>
+
+
+<!--sign up-->
+        <div class="sign-up-form">
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Crea tu Cuenta</strong>
+            <form action="php/registro.php" method="POST">
+                <input type="text" placeholder="Nombre Completo" name="nombre" required>
+                <input type="email" placeholder="@gmail.com" name="correo" required>
+                <input type="tel" placeholder="Telefono" name="telefono" required>
+                <input type="password" placeholder="Contraseña" name="contrasena" required>
+                
+                <input type="submit" value="Registrarse">
+            </form>
+  
+              <!--forget and sign up btn-->
+              <div class="form-btns">
+                <a href="javascript:void(0);"  class="already-acount">Ya tengo Cuenta</a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------FULL SLIDER----BANNER DINAMICO---->
+    <div class="container-all">
+
+        <input type="radio" id="1" name="image-slide" hidden/>
+        <input type="radio" id="2" name="image-slide" hidden/>
+        <input type="radio" id="3" name="image-slide" hidden/>
+
+        <div class="slide">
+
+            <div class="item-slide">
+                <img src="Images/slider11.png">
+            </div>
+
+            <div class="item-slide">
+                <img src="Images/slider2.png">
+            </div>
+
+            <div class="item-slide">
+                <img src="Images/slider44.png">
+            </div>
+
+        </div>
+
+        <div class="pagination">
+           
+            <label class="pagination-item" for="1">
+                <img src="Images/img1.jpg">
+            </label>
+            
+            <label class="pagination-item" for="2">
+                <img src="Images/img2.jpg">
+            </label>
+            
+            <label class="pagination-item" for="3">
+                <img src="Images/img3.jpg">
+            </label>
+            
+        </div>
+        
+    </div>
+<!----------desde aqui--------CATEGORIAS--------jimy--------------->
+<div class="Feature-heading">
+    <h2>VARIEDAD DE PRODUCTOS</h2>
+ </div>
+
+ <ul id = "autoWidth" class = "cs-hidden" >  
+     <!---1-------->
+     <li clase = "item" ><!------------------FEACTURED BOX-------->
+    <div class="feature-box">
+     <a href="">
+          <img src="images/1MScribe.jpg" />
+     </a>
+ </div>
+       <span>Cuadernos</span>
+    </li> 
+
+    <!---2-------->
+    <li clase = "item" ><!------------------FEACTURED BOX-------->
+     <div class="feature-box">
+      <a href="">
+           <img src="img/Mochila.jpg" />
+      </a>
+  </div>
+        <span>MOCHILAS</span>
+     </li> 
+
+     <!---3-------->
+     <li clase = "item" ><!------------------FEACTURED BOX-------->
+         <div class="feature-box">
+          <a href="">
+               <img src="img/lapicera.jpg" />
+          </a>
+      </div>
+            <span>UTILES</span>
+         </li> 
+
+         <!---4-------->
+     <li clase = "item" ><!------------------FEACTURED BOX-------->
+         <div class="feature-box">
+          <a href="">
+               <img src="img/Cartilina.jpg" />
+        </div>
+              <span>PAPELERIA</span>
+         </li> 
+
+         </li> 
+      </div>
+ </ul>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+ <!---------------------New Arrival--- nueva entrada-------area de niños-------->
+ <section class="new-arrival">
+     <!---heading--->
+     <div class="arrival-heading">
+         <strong>AREA DE NIÑOS</strong>
+         <p> Para los pequeños de Casa</p>
+     </div>
+
+     <!---Product Container--->
+     <div class="product-container">
+         <!---producto  box 1 --->
+         <div class="product-box">
+            
+             <!---img-->
+             <div class="product-img">
+                  <!---add cart--->
+             <a href="jugueteria.html" class="add-cart">
+                 <i class="fas fa-shopping-cart"></i>
+             </a>
+                 <img src="imaNiños/tonca.jpg" />
+             </div>
+             <!---details--detalles--->
+             <div class="product-details">
+                 <a href="jugueteria.html" class="p-name">Juguetes de Alta Gama</a>
+                 <span class="p-price">L1500.00</span>
+             </div>
+         </div>
+
+         <!---producto  box 1 --->
+         <div class="product-box">
+            
+             <!---img-->
+             <div class="product-img">
+                  <!---add cart--->
+             <a href="#" class="add-cart">
+                 <i class="fas fa-shopping-cart"></i>
+             </a>
+                 <img src="imaNiños/rompe.jpg" />
+             </div>
+             <!---details--detalles--->
+             <div class="product-details">
+                 <a href="jugueteria.html" class="p-name">Pon a Jugar tu mente</a>
+                 <span class="p-price">L80.00</span>
+             </div>
+         </div>
+
+         <!---producto  box 2 --->
+         <div class="product-box">
+            
+             <!---img-->
+             <div class="product-img">
+                  <!---add cart--->
+             <a href="#" class="add-cart">
+                 <i class="fas fa-shopping-cart"></i>
+             </a>
+                 <img src="imaNiños/muñeca.jpg" />
+             </div>
+             <!---details--detalles--->
+             <div class="product-details">
+                 <a href="jugueteria.html" class="p-name">Para un princesa</a>
+                 <span class="p-price">L80.00</span>
+             </div>
+         </div>
+
+         <!---producto  box 3 --->
+         <div class="product-box">
+            
+             <!---img-->
+             <div class="product-img">
+                  <!---add cart--->
+             <a href="biblioteca.html" class="add-cart">
+                 <i class="fas fa-shopping-cart"></i>
+             </a>
+                 <img src="imaNiños/libro.jpg" />
+             </div>
+             <!---details--detalles--->
+             <div class="product-details">
+                 <a href="biblioteca.html" class="p-name">Para los primeros artisticas</a>
+                 <span class="p-price">L80.00</span>
+             </div>
+         </div>
+
+     </div>
+ </section>
+         <!---sale------------>
+ <section class="sale">
+         <!---sale-box 1--------->
+         <div class="sale-box">
+             <!---img--->
+             <img src="imaNiños/felizcumple.jpg"/>
+             <!---text--->
+             <a href="jugueteria.html">
+                 <div class="sale-text">
+                    <br>
+                     <strong></strong>
+                    <  <span>OFERTA</span>
+                     <span>Variedd dde Cortinas</span>
+                 </div>
+             </a>
+         </div>
+
+          <!---sale-box 2--------->
+          <div class="sale-box">
+             <!---img--->
+             <img src="imaNiños/globos.jpg"/>
+             <br>
+             <!---text--->
+             <a href="jugueteria.html">
+                 <div class="sale-text">
+                    <br>
+                     <strong>Globos Metalizados</strong>
+                     <span>Oferta 10%</span>
+                 </div>
+             </a>
+         </div>
+
+         <!---sale-box 3--------->
+         <div class="sale-box">
+             <!---img--->
+             <img src="imaNiños/felizcumple.jpg"/>
+             <br>
+             <!---text--->
+             <a href="jugueteria.html">
+                 <div class="sale-text">
+                    <br>
+                     <strong>Letras Inflables</strong>
+                     <span>Por Mayoreo</span>
+                 </div>
+             </a>
+         </div>
+
+         <!---sale-box 4--------->
+         <div class="sale-box">
+             <!---img--->
+             <img src="images/Boligrafo4color.jpg"/>
+             <!---text--->
+             <a href="Cuaderno.html">
+                 <div class="sale-text">
+                     <strong>bag width rose  pattern</strong>
+                     <span>sale off 25%</span>
+                 </div>
+             </a>
+         </div>
+
+
+ </section>
+
+ <!---new arrival 2-->
+
+
+
+ <section class="new-arrival">
+     <!---heading--->
+     <div class="arrival-heading">
+         <strong>LIBROS DE LECTURA</strong>
+         <p></p>
+     </div>
+
+     <!---Product Container--->
+     <div class="product-container">
+         <!---producto  box 1 --->
+         <div class="product-box">
+            
+             <!---img-->
+             <div class="product-img">
+                  <!---add cart--->
+             <a href="biblioteca.html" class="add-cart">
+                 <i class="fas fa-shopping-cart"></i>
+             </a>
+                 <img src="img/libroT1.jpg" />
+             </div>
+             <!---details--detalles--->
+             <div class="product-details">
+                 <a href="biblioteca.html" class="p-name">Libro de Habilidad</a>
+                 <span class="p-price">L100.00</span>
+             </div>
+         </div>
+
+         <!---producto  box 1 --->
+         <div class="product-box">
+            
+             <!---img-->
+             <div class="product-img">
+                  <!---add cart--->
+             <a href="biblioteca.html" class="add-cart">
+                 <i class="fas fa-shopping-cart"></i>
+             </a>
+                 <img src="img/LibroT2.jpg" />
+             </div>
+             <!---details--detalles--->
+             <div class="product-details">
+                 <a href="biblioteca.html" class="p-name">Libro de Actividades Motoras</a>
+                 <span class="p-price">L90.00</span>
+             </div>
+         </div>
+
+         <!---producto  box 2 --->
+         <div class="product-box">
+            
+             <!---img-->
+             <div class="product-img">
+                  <!---add cart--->
+             <a href="#" class="add-cart">
+                 <i class="fas fa-shopping-cart"></i>
+             </a>
+                 <img src="img/libroT3.png" />
+             </div>
+             <!---details--detalles--->
+             <div class="product-details">
+                 <a href="#" class="p-name">Pruebas Formativas</a>
+                 <span class="p-price">L50.00</span>
+             </div>
+         </div>
+
+         <!---producto  box 3 --->
+       
+ </section>
+
+              <!---banner---------------------    
+              <div class="slider">
+         
+                 <img class="imga-slider" src="images/portadaq.png">
+                 <img class="imga-slider" src="images/por.png">
+                
+             </div> --->
+
+<!--------Services-------------> 
+ <section class="services">
+      <!---services box 1-------------------->
+      <div class="services-box">
+          <i class="fas fa-shipping-fast"></i>
+          <span>SERVICIO A DOMICIO</span>
+          <p>Incluye Pago Extra</p>
+
+      </div> 
+
+       <!---services box 2-------------------->
+       <div class="services-box">
+         <i class="fas fa-headphones-alt"></i>
+         <span>Atencion al Cliente</span>
+         <p> 8:00 am -9:00pm</p>
+
+     </div> 
+
+      <!---services box- 3------------------->
+      <div class="services-box">
+         <i class="fas fa-sync"></i>
+         <span>Pago en Efectivo</span>
+         <p>Moneda Nacional</p>
+
+     </div> 
+
+ </section>
+   
+
+    <div class="container-fluid">
+
+		<footer class="row justify-content-center redes-sociales">
+			<div class="col-auto">
+				<a href="#"><img src="img/icons/facebook.png" alt=""></a>
+				<a href="#"><img src="img/icons/twitter.png" alt=""></a>
+				<a href="#"><img src="img/icons/instagram-new.png" alt=""></a>
+			</div>
+		</footer>
+	</div>
+
+
+    <script src="js/Jquery.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/Smain.js"></script>
+    
+    <script type="text/javascript">
+    /*---for---*/ 
+    $(document).on("click",".search",function(){
+        $(".search-bar").addClass("search-bar-active")
+    });
+
+    $(document).on("click",".search-cancel",function(){
+        $(".search-bar").removeClass("search-bar-active")
+    });
+
+   /*---login sing up form---*/ 
+   $(document).on("click",".user,.already-acount",function(){
+        $(".form").addClass("login-active").removeClass("sign-up-active")
+    });
+
+    $(document).on("click",".sign-up-btn",function(){
+        $(".form").addClass("sign-up-active").removeClass("login-active")
+    });
+
+    $(document).on("click",".form-cancel",function(){
+        $(".form").removeClass("login-active").removeClass("sign-up-active")
+    });
+
+    /**FULL- SLIDER-SCRIPT**/
+
+    $(document).ready(function() {
+    $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+});
+ /**********************************************************************************************************************************/
+
+    /*----------Feature slider----------------------------*/
+    $(document).ready(function(){
+        $('autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function(){
+                $('autoWidth').removeClass('cS.hidden');
+            }
+        });
+    });
+
+    
+     /*----------for-fix-menu-when-scroll-------------------------*/
+     $(window).scroll(function(){
+         if($(document).scrollTop() > 50){
+             $('.navigation').addClass('fix-nav');
+         }
+         else{
+            $('.navigation').removeClass('fix-nav');
+         }
+         
+     });
+       /*RESPONSORIAL*/
+
+     /*------for--responsive-menu*/
+     $(document).ready(function(){
+         $('.toggle').click(function(){
+             $('.toggle').toggleClass('active')
+             $('.navigation').toggleClass('active')
+         })
+     })
+
+
+    </script>
+
+
+</body>
+</html>
